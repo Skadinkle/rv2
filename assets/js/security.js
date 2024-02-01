@@ -1,4 +1,3 @@
-/*
 	// Stop Right-Click Menu from Appearing
 document.addEventListener('contextmenu', (input) => {
 	input.preventDefault();
@@ -33,4 +32,3 @@ function onInspectElement() {
 function onSaveAs() {
 	page.innerHTML = "Save as... is disabled.";
 }
-*/
