@@ -19,7 +19,8 @@ function onCreditsMember(name) {
 	const czarElementArray = ["The Czar Bomba", "a kilt-wearing tyrant", "yodelayheehoo", "", "", "", "", "", "", "", "", "", "", "none", "none", "none", "none", "none"];
 	const pesElementArray = ["Pes", "loser says funny things", "yeah", "o-efwvrpxafiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiickkk", "", "", "", "", "sites.google.com/hhcsdstudents.org/o-efwvrpxafiiiiiiiiiiiiiiiiiii/home", "", "", "", "", "initial", "none", "none", "none", "none"];
 	const mrspringsElementArray = ["mr springs", "local dumb found on youtube", "he do the funni", "Youtube (Main)", "Youtube(Alt)", "", "", "", "www.youtube.com/@mrsprings6006", "www.youtube.com/@Springbois-iu7re", "", "", "", "initial", "initial", "none", "none", "none"];
-	const jackElementArray = ["Jack", "The Twisted One, very odd per say, and knows where you live and sleep at all times, also im good friend unless you stab me in the back like a dumb mother f****r...", "dont you regret life welp i do and now i lurk on the internet yay always waiting for you...", "Buy Me a Coffee", "Discord", "Patreon", "SCHOOL RESOURCES", "Youtube", "www.buymeacoffee.com/28rvds2gdnx", "discord.com/users/@TheTwistedOne#3211", "www.patreon.com/TheTwistedOne", "sites.google.com/hhcsdstudents.org/school-resources", "www.youtube.com/@TTO1980", "initial", "initial", "initial", "initial", "initial"];
+	const thecevinatorElementArray = ["The Cevinator", "none", "none", "Cornhub", "", "", "", "", "cornhub.website/", "", "", "", "", "initial", "none", "none", "none", "none"];
+	const jackElementArray = ["Jack", "The Twisted One, very odd per say, and knows where you live and sleep at all times, also im good friend unless you stab me in the back like a dumb mother f****r...", "dont you regret life welp i do and now i lurk on the internet yay always waiting for you...", "Buy Me a Coffee", "Discord", "Patreon", "(CCC)", "Youtube", "www.buymeacoffee.com/28rvds2gdnx", "discord.com/users/@TheTwistedOne#3211", "www.patreon.com/TheTwistedOne", "sites.google.com/hhcsdstudents.org/crazy-company/", "www.youtube.com/@TTO1980", "initial", "initial", "initial", "initial", "initial"];
 
 		// Show Corresponding Member
 	const memberElementArray = [member_name, member_desc1, member_desc2, member_link1, member_link2, member_link3, member_link4, member_link5];
@@ -39,6 +40,9 @@ function onCreditsMember(name) {
 		}
 		if (name == "mrsprings") {
 			memberDataArray = [...mrspringsElementArray];
+		}
+		if (name == "thecevinator") {
+			memberDataArray = [...thecevinatorElementArray];
 		}
 		if (name == "jack") {
 			memberDataArray = [...jackElementArray];
