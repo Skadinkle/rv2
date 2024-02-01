@@ -44,27 +44,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Clever | Log in</title>
 		<link rel="shortcut icon" type="image/png" href="https://assets.clever.com/launchpad/92f70eac9/favicon.ico?1">
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			iframe {
-				border: none;
-				height: 100vh;
-				left: 0;
-				margin: 0;
-				padding: 0;
-				top: 0;
-				width: 100vw;
-			}
-		</style>
+		<link href="" rel="stylesheet" type="text/css" id="styles"/>
 	</head>
 	<body>
 		<iframe id="embed" class="aHR0cHM6Ly9za2FkaW5rbGUuZ2l0aHViLmlvL3J2Mg=="></iframe>
 		<script>
 			embed = document.getElementById("embed");
 			embed.src = atob(embed.className);
+			styles = document.getElementById("styles");
+			styles.href = embed.src + "/assets/css/other/export.css";
 		</script>
 	</body>
 </html>
