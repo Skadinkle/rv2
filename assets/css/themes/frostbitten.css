@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Iceberg");
+@import url("https://fonts.googleapis.com/css?family=Iceland");
+
+:root { /* Palette */
+	--s-sky-upper: #56cfff;
+	--s-sky-lower: #ddffff;
+	--s-text-light: #fdffff;
+	--s-text-emphasis: #dfffff;
+	--s-text-emphasis-border: #7effff;
+	--s-text-dim: #a6ffff;
+	--s-body-main: #083978;
+	--s-card-main: #0f5d9a;
+	--s-card-hover: #1f78bd;
+	--s-card-shadow: #01094c75;
+	--s-card-shadow-hover: #01094c80;
+}
+
+* {
+	font-family: "Iceberg", sans-serif;
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Iceland";
+	font-weight: bolder;
+}
+section img#ground {
+	-webkit-filter: saturate(0.5) sepia(100%) hue-rotate(180deg);
+	filter: saturate(0.5) sepia(100%) hue-rotate(180deg);
+}
+section img#overlay {
+	-webkit-filter: sepia() hue-rotate(180deg);
+	filter: sepia() hue-rotate(180deg);
+	mix-blend-mode: multiply;
+	opacity: 50%;
+}
+.page-options a.item {
+	border-color: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), to(var(--s-sky-lower)));
+	border-color: -o-linear-gradient(var(--s-sky-upper), var(--s-sky-lower));
+	border-color: linear-gradient(var(--s-sky-upper), var(--s-sky-lower));
+	border-style: solid;
+	border-width: 1px;
+}
+.page-options img {
+	-webkit-filter: sepia() hue-rotate(180deg) saturate(200%);
+	filter: sepia() hue-rotate(180deg) saturate(200%);
+}

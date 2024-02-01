@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Jura");
+@import url("https://fonts.googleapis.com/css?family=Viga");
+
+:root { /* Palette */
+	--s-sky-upper: #635ebd;
+	--s-sky-lower: #fbdaff;
+	--s-text-light: #ffcbf9;
+	--s-text-emphasis: #ffa0d8;
+	--s-text-emphasis-border: #c072a6;
+	--s-text-dim: #d781d8;
+	--s-body-main: #003663;
+	--s-card-main: #113c72;
+	--s-card-hover: #225089;
+	--s-card-shadow: #002e5875;
+	--s-card-shadow-hover: #002e5880;
+}
+
+* {
+	font-family: "Jura", sans-serif;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(50vh, var(--s-sky-lower)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh);
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Viga";
+	font-weight: 200;
+}
+section img#sky {
+	mix-blend-mode: multiply;
+}
+section img#ground, .page-options img {
+	-webkit-filter: sepia() hue-rotate(-150deg) saturate(200%);
+	filter: sepia() hue-rotate(-150deg) saturate(200%);
+}
+footer {
+	width: 550px;
+}

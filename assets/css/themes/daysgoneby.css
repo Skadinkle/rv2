@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre");
+
+:root { /* Palette */
+	--s-sky-upper: #8dacba;
+	--s-sky-lower: #d7cfc8;
+	--s-text-light: #fdd0fc;
+	--s-text-emphasis: #d7cfc8;
+	--s-text-emphasis-border: #5e7f8f;
+	--s-text-dim: #f7d0d0;
+	--s-body-main: #150926;
+	--s-card-main: #1f2b68;
+	--s-card-hover: #315383;
+	--s-card-shadow: #00000075;
+	--s-card-shadow-hover: #00000080;
+}
+
+* {
+	font-family: "Averia Gruesa Libre", sans-serif;
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Averia Gruesa Libre";
+	font-weight: bolder;
+}
+section img#ground {
+	-webkit-filter: sepia(50%) hue-rotate(30deg) saturate(150%) opacity(90%);
+	filter: sepia(50%) hue-rotate(30deg) saturate(150%) opacity(90%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+.page-options img {
+	-webkit-filter: sepia() hue-rotate(180deg) contrast(125%);
+	filter: sepia() hue-rotate(180deg) contrast(125%);
+}
+footer {
+	width: 540px;
+}

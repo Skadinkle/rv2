@@ -1,0 +1,1 @@
+javascript:void(open('http://www.webcitation.org/query?url=' + decodeURIComponent(location.href)));

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root { /* Palette */
+	--s-sky-upper: #446cf2;
+	--s-sky-lower: #ffffff;
+	--s-text-light: #000000;
+	--s-text-emphasis: #fafbfd;
+	--s-text-emphasis-border: #474c5e;
+	--s-text-dim: #494d59;
+	--s-body-main: #ffffff;
+	--s-card-main: #767c88;
+	--s-card-hover: #a8aeba;
+	--s-card-shadow: #00000075;
+	--s-card-shadow-hover: #00000080;
+
+	--s-cleverest-headershadow: #2146bd40;
+}
+
+* {
+	font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+body, #video-main, #settings_menu {
+	background: var(--s-sky-lower);
+}
+header {
+	background: var(--s-sky-upper);
+	box-shadow: 0 1px 6px 2px var(--s-cleverest-headershadow);
+}
+header .funky-site-logo, header ul li a {
+	color: var(--s-text-emphasis);
+}
+header ul li a {
+	border-radius: 1vh;
+}
+header .funky-site-logo:hover, header ul li a:hover {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 1vh;
+}
+header ul li a.active, header ul li a#active {
+	background: transparent;
+	text-decoration: underline;
+	text-underline-offset: 1vh;
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Montserrat";
+	font-weight: 900;
+}
+section img#ground {
+	-webkit-filter: sepia() hue-rotate(180deg) grayscale(50%) opacity(75%);
+	filter: sepia() hue-rotate(180deg) grayscale(50%) opacity(75%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+.info-box, #video-player {
+	background: var(--s-text-emphasis);
+}
+.info-box p, #settings_bar ul li a {
+	color: var(--s-sky-upper);
+}
+.page-options-name {
+	text-decoration: none;
+}
+.page-options a.item {
+	background: transparent;
+	text-decoration: none;
+	-webkit-transition: 0s;
+	-o-transition: 0s;
+	transition: 0s;
+}
+.page-options a.item:hover {
+	background-color: transparent;
+	-webkit-filter: drop-shadow(0px 5px 4px var(--s-card-shadow));
+	filter: drop-shadow(0px 5px 4px var(--s-card-shadow));
+	rotate: 0deg;
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+.page-options a.item:visited {
+	border-style: dotted;
+}
+.page-options a:link, .page-options a:visited {
+	background: var(--s-card-main);
+}
+.page-options a:hover:link, .page-options a:hover:visited {
+	background: var(--s-card-hover);
+}
+.page-options img {
+	-webkit-filter: none;
+	filter: none;
+}
+.page-options p {
+	color: var(--s-text-light);
+	font-weight: 100;
+	text-decoration: none;
+}
+img.squish {
+	-webkit-filter: invert();
+	filter: invert();
+}
+#video-player {
+	-webkit-filter: none;
+	filter: none;
+}
+h2#video-player, #video-menu h2, #settings_bar h2, #settings_home h2{
+	color: var(--s-text-dim);
+}
+#video-menu, #settings_bar {
+	background: var(--s-text-emphasis);
+}
+#video-menu ul li:hover, #settings_bar ul li a:hover {
+	background: transparent;
+	border-left: 0.1875rem solid var(--s-sky-upper);
+	border-radius: 0;
+	color: var(--s-sky-upper);
+	font-size: 17px;
+	padding-left: 1vh;
+}
+#video-menu ul li:hover {
+	border-color: transparent transparent transparent var(--s-sky-upper);
+	border-style: solid;
+	font-size: 10px;
+}
+#settings_branding ul li, #settings_colorcorrection ul li, #settings_themes ul li, #settings_additional ul li, #settings_credits a {
+	background: var(--s-sky-upper);
+}
+#settings_branding ul li:hover, #settings_colorcorrection ul li:hover, #settings_themes ul li:hover, #settings_additional ul li:hover {
+	border-color: var(--s-sky-upper);
+}
+footer {
+	background: rgba(255, 255, 255, 0.25);
+	width: 600px;
+}
+footer a#footer-time, footer a#footer-brand {
+	color: var(--s-sky-upper);
+}
+footer a:link, footer a:visited {
+	color: var(--s-card-hover);
+}
+footer a:link:hover, footer a:visited:hover {
+	text-shadow: -0.25px -0.25px 0 var(--s-card-hover), 0.25px -0.25px 0 var(--s-card-hover), -0.25px 0.25px 0 var(--s-card-hover), 0.25px 0.25px 0 var(--s-card-hover);
+}

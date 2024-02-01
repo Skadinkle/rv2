@@ -1,0 +1,98 @@
+@import url("./episodeparts.css"); /* Imports */
+
+body { /* Base Properties */
+	font-family: "Dosis", "Indie Flower";
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+#video-main { /* Main Menu Components */
+	background: -o-linear-gradient(var(--s-card-main), var(--s-card-hover) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-card-main)), to(var(--s-card-hover)));
+	background: linear-gradient(var(--s-card-main), var(--s-card-hover) 100%);
+	display: -ms-grid;
+	display: grid;
+	gap: 10px;
+	grid-auto-rows: minmax(10vh, auto);
+	-ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	min-height: 100vh;
+}
+
+#video-div { /* The Video Player Bit */
+	padding-left: 5vw;
+	padding-top: 15vh;
+	position: fixed;
+}
+#video-player {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	border-style: none;
+	-webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+	height: 80vh;
+	position: absolute;
+	width: 66.666vw;
+}
+h2#video-player {
+	color: var(--s-text-light);
+	font-family: "Indie Flower";
+	font-size: 10vh;
+	padding-top: 25vh;
+	pointer-events: none;
+	text-align: center;
+}
+
+#video-menu { /* Side Bar Stuff */
+	background: -webkit-gradient(linear, left top, right bottom, from(var(--s-body-main)), to(var(--s-card-hover)));
+	background: -o-linear-gradient(top left, var(--s-body-main), var(--s-card-hover) 100%);
+	background: linear-gradient(to bottom right, var(--s-body-main), var(--s-card-hover) 100%);
+	-ms-grid-column: 4;
+	grid-column: 4;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 2;
+	grid-row: 1/3;
+	overflow-y: scroll;
+	padding-top: 20px;
+}
+#video-menu h2 {
+	color: var(--s-text-emphasis);
+	font-family: "Indie Flower";
+	font-size: 5vh;
+	font-weight: 700;
+	padding: 0;
+	padding-top: 10vh;
+	text-align: center;
+}
+#video-menu ul {
+	padding: 20px;
+	padding-top: 0px;
+	padding-bottom: 5vh;
+}
+#video-menu ul li {
+	border-color: rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	border-style: dotted;
+	border-width: 1px;
+	color: var(--s-text-dim);
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 0.1vh;
+	list-style-image: url("./../../icons/transparent.gif");
+	padding: 1.5vh;
+	-webkit-transition: font-weight 0.2s, border-radius 0.3s;
+	-o-transition: font-weight 0.2s, border-radius 0.3s;
+	transition: font-weight 0.2s, border-radius 0.3s;
+}
+#video-menu ul li:hover {
+	border-color: var(--s-text-dim);
+	border-radius: 10px;
+	border-style: dotted;
+	border-width: 1px;
+	-webkit-filter: brightness(150%);
+	filter: brightness(150%);
+	font-weight: 700;
+	text-decoration: underline;
+}

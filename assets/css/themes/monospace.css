@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+:root { /* Palette */
+	--s-sky-upper: #121214;
+	--s-sky-lower: #121214;
+	--s-text-light: #fcfcfc;
+	--s-text-emphasis: #fcfcfc;
+	--s-text-emphasis-border: #121214;
+	--s-text-dim: #fcfcfc;
+	--s-body-main: #121214;
+	--s-card-main: #121214;
+	--s-card-hover: #121214;
+	--s-card-shadow: #12121475;
+	--s-card-shadow-hover: #12121480;
+}
+
+* {
+	font-family: "Space Mono", sans-serif;
+}
+body {
+	background: var(--s-sky-upper);
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Share Tech Mono";
+	font-weight: bolder;
+}
+.main-body {
+	-webkit-filter: grayscale();
+	filter: grayscale();
+}
+section img#sky {
+	opacity: 0;
+}
+section img#ground {
+	-webkit-filter: grayscale() contrast(500%) opacity(90%);
+	filter: grayscale() contrast(500%) opacity(90%);
+}
+section img#overlay {
+	mix-blend-mode: multiply;
+}
+.page-options a.item {
+	border-color: var(--s-text-emphasis);
+	border-style: solid;
+	border-width: 1px;
+}
+footer {
+	width: 660px;
+}

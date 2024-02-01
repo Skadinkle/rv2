@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee");
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand+SC");
+
+:root { /* Palette */
+	--s-sky-upper: #7d7d8d;
+	--s-sky-lower: #e9eba8;
+	--s-text-light: #f3e3b9;
+	--s-text-emphasis: #f4d068;
+	--s-text-emphasis-border: #bb823f;
+	--s-text-dim: #c5a788;
+	--s-body-main: #44240d;
+	--s-card-main: #4f3113;
+	--s-card-hover: #533317;
+	--s-card-shadow: #38190d75;
+	--s-card-shadow-hover: #38190d80;
+}
+
+* {
+	font-family: "Handlee", sans-serif;
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Patrick Hand SC";
+}
+section img#sky, section img#overlay, img.squish {
+	-webkit-filter: sepia();
+	filter: sepia();
+}
+section img#ground {
+	-webkit-filter: saturate(0.8) sepia(50%) hue-rotate(-15deg);
+	filter: saturate(0.8) sepia(50%) hue-rotate(-15deg);
+}
+.page-options img {
+	-webkit-filter: sepia() saturate(200%);
+	filter: sepia() saturate(200%);
+}
+footer {
+	width: 430px;
+}

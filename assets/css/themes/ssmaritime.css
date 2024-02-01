@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Chelsea+Market");
+
+:root { /* Palette */
+	--s-sky-upper: #699fa8;
+	--s-sky-lower: #c6e3e0;
+	--s-text-light: #f0e3dc;
+	--s-text-emphasis: #ffb78f;
+	--s-text-emphasis-border: #c8381b;
+	--s-text-dim: #ffa778;
+	--s-body-main: #1f3e59;
+	--s-card-main: #3b697c;
+	--s-card-hover: #5ba1a7;
+	--s-card-shadow: #12121475;
+	--s-card-shadow-hover: #12121480;
+}
+
+* {
+	font-family: "Chelsea Market", sans-serif;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(50vh, var(--s-sky-lower)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh);
+}
+header .funky-site-logo, header ul li a, .funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, .main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Chelsea Market";
+	font-weight: bolder;
+}
+section img#sky {
+	-webkit-filter: saturate(2) hue-rotate(90deg);
+	filter: saturate(2) hue-rotate(90deg);
+	mix-blend-mode: color;
+}
+section img#ground {
+	filter: sepia(50%) hue-rotate(-90deg) brightness(112.5%) saturate(200%);
+}
+.page-options img {
+	filter: sepia() hue-rotate(-12.5deg) saturate(200%);
+}
+footer {
+	width: 590px;
+}

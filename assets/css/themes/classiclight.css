@@ -1,0 +1,29 @@
+:root { /* Palette */
+	--s-sky-upper: #ffffff;
+	--s-sky-lower: #ffffff;
+	--s-text-light: #282828;
+	--s-text-emphasis: #ffffff;
+	--s-text-emphasis-border: #333333;
+	--s-text-dim: #292929;
+	--s-body-main: #cbcbcb;
+	--s-card-main: #666666;
+	--s-card-hover: #4d4d4d;
+	--s-card-shadow: #28282875;
+	--s-card-shadow-hover: #28282880;
+}
+
+section img#sky {
+	-webkit-filter: saturate(2) grayscale();
+	filter: saturate(2) grayscale();
+}
+section img#ground {
+	-webkit-filter: saturate(0.8) grayscale() brightness(150%);
+	filter: saturate(0.8) grayscale() brightness(150%);
+}
+img.squish {
+	filter: invert();
+	opacity: 84%;
+}
+#video-main, #settings_menu {
+	background: var(--s-body-main);
+}

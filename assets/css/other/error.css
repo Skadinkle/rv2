@@ -1,0 +1,32 @@
+@import url("./fonts.css"); /* Imports */
+
+
+* { /* Simple Page Layout */
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+body {
+	font-family: "Dosis", sans-serif;
+	margin-left: 5vw;
+	margin-top: 5vh;
+}
+p a:link, p a:visited {
+	color: #0000ff;
+	margin-left: 2.5vw;
+	padding: 0;
+}
+h2 {
+	font-family: "Indie Flower";
+}
+#help {
+	margin-left: 0;
+}
+footer {
+	bottom: 5vh;
+	position: absolute;
+	right: 5vw;
+}
+footer a {
+	color: #404040;
+	text-decoration: none;
+}
