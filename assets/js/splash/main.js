@@ -50,3 +50,9 @@ function onRandoText() {
 		funky_title_splash.innerHTML = randomValue.splashEntry;
 	}
 };
+window.onload = function() {
+	let funky_title_splash = document.getElementById("funky-title-splash");
+	if (typeof(funky_title_splash) != "undefined" && funky_title_splash != null) {
+		onRandoText();
+	}
+}
