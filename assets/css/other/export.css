@@ -4,6 +4,10 @@
 	overflow-y: hidden;
 	padding: 0;
 }
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
 iframe {
 	border: none;
 	height: 100vh;
