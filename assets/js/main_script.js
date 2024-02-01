@@ -42,15 +42,8 @@ function onAddAsset(name, type) {
 }
 
 	// Add Scripts to Page
-const mainScriptsArray = ["aboutblank", "security", "settings", "titlecard", "other/debugger", "other/eastereggs", "other/footer", "other/functions", "other/nointernet", "other/videoplayer"];
+const mainScriptsArray = ["aboutblank", "security", "settings", "titlecard", "splash/main", "other/debugger", "other/eastereggs", "other/footer", "other/functions", "other/nointernet", "other/ratgen", "other/ratify", "other/videoplayer"];
 for (let i = 0; i < mainScriptsArray.length; ++i) {
 	let elem = mainScriptsArray[i];
 	onAddAsset(elem, "script");
-}
-if (windowFilename == "index.html") { // Index Page
-	onAddAsset("other/ratify", "script");
-	onAddAsset("splash/main", "script");
-}
-if (windowFilename == "ratgen.html") {
-	onAddAsset("other/ratgen", "script");
 }
