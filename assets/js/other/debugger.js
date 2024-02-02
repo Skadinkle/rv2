@@ -40,7 +40,7 @@ window.addEventListener("keydown", function(key) {
 		}
 		if (key.keyCode == "57") { // "9" Go to Debug Page
 			if (windowFilename != ".debug.html") {
-				window.location = onGetPath(document.getElementById("styles").href) + "./../.debug.html";
+				window.location = onGetPath(document.getElementById("styles").href) + "./../../pages/.debug.html";
 			}
 		}
 	}
