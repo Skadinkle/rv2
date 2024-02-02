@@ -40,7 +40,7 @@ window.addEventListener("keydown", function(key) {
 		}
 		if (key.keyCode == "57") { // "9" Go to Debug Page
 			if (windowFilename != ".debug.html") {
-				window.location = onGetPath(document.getElementById("styles").href) + "./../../.debug.html";
+				window.location = onGetPath(document.getElementById("styles").href) + "./../.debug.html";
 			}
 		}
 	}
@@ -52,7 +52,6 @@ function onDebugInfo() {
 	if (consoleLog === false) {
 		console.group("__rv2_build_info__");
 			console.log("Current Month: " + new Date().getMonth() + 1);
-			console.log("File Name: " + windowFilename);
 			console.log("Language: " + navigator.language);
 			console.log("Page Title: " + document.title);
 			console.log("Version: 2.0_Alpha");
