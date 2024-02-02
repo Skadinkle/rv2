@@ -1,4 +1,6 @@
-if (windowFilename == "index.html") {
+	// Get Page Title
+let funky_title_large = document.getElementById("funky-title-large");
+if (funky_title_large.innerHTML == "RATS") {
 
 		// Old Bing Rat
 	if (Math.random() < 0.01) {
@@ -25,7 +27,7 @@ if (windowFilename == "index.html") {
 }
 
 	// Minceraft Text
-if (windowFilename == "minecraft.html") {
+if (funky_title_large.innerHTML === "Minecraft") {
 	if (Math.random() < 0.1) {
 		document.getElementById("funky-title-large").innerHTML = "Minceraft";
 	}
@@ -52,7 +54,7 @@ if (windowFilename == "settings.html") {
 }
 
 	// Jumpscare User
-/*window.addEventListener("load", function() {
+window.addEventListener("load", function() {
 	if (Math.random() < 0.01 || (Math.random() < 0.05 && this.localStorage.rv2_theme == "spinetingler")) {
 		jumpscare = document.createElement("img");
 		jumpscare.src = "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/b/b9/FNAF2OldFoxyJumpscare.gif/revision/latest/";
@@ -60,4 +62,4 @@ if (windowFilename == "settings.html") {
 		document.body.appendChild(jumpscare);
 		console.log("Did I get'cha?");
 	}
-});*/
+});
