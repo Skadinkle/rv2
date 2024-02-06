@@ -6,16 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Clever | Log in</title>
 		<link rel="shortcut icon" type="image/png" href="https://assets.clever.com/launchpad/92f70eac9/favicon.ico?1">
-		<link href="" rel="stylesheet" type="text/css" id="styles"/>
+		<link href="#" rel="stylesheet" type="text/css" id="styles"/>
 		<script id="security" src=""></script>
 	</head>
 	<body>
 		<iframe id="embed" class="aHR0cHM6Ly9za2FkaW5rbGUuZ2l0aHViLmlvL3J2Mg=="></iframe>
 		<script>
+				// Load Embeded Page
 			embed = document.getElementById("embed");
 			embed.src = atob(embed.className);
+
+				// Load Export CSS
 			styles = document.getElementById("styles");
 			styles.href = embed.src + "/assets/css/other/export.css";
+
+				// Load Security Script
 			security = document.getElementById("security");
 			security.src = embed.src + "/assets/js/security.js";
 		</script>
