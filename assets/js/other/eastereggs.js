@@ -56,7 +56,7 @@ if (windowFilename == "settings.html") {
 }
 
 	// Jumpscare User
-/*window.addEventListener("load", function() {
+window.addEventListener("load", function() {
 	if (Math.random() < 0.01 || (Math.random() < 0.05 && this.localStorage.rv2_theme == "spinetingler")) {
 		jumpscare = document.createElement("img");
 		jumpscare.src = "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/b/b9/FNAF2OldFoxyJumpscare.gif/revision/latest/";
@@ -64,4 +64,4 @@ if (windowFilename == "settings.html") {
 		document.body.appendChild(jumpscare);
 		console.log("Did I get'cha?");
 	}
-});*/
+});
