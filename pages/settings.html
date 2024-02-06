@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Privacy policy | Clever</title>
+		<link rel="stylesheet" href="./../assets/css/other/settings.css">
+		<link rel="shortcut icon" href="https://www.clever.com/wp-content/uploads/2023/06/cropped-Favicon-512px-32x32.png">
+		<link href="./../assets/css/styles.css" rel="stylesheet" type="text/css" id="styles"/>
+	</head>
+	<body>
+		<script src="./../assets/js/main_script.js"></script>
+		<header>
+			<a href="./../index.html" id="funky-site-logo">RATS</a>
+			<ul>
+				<li><a href="./allow.html">Allowers</a></a>
+				<li><a href="./bookmarklets.html">Bookmarklets</a></a>
+				<li><a href="./books.html">Books</a></a>
+				<li><a href="./editors.html">Editors</a></a>
+				<li><a href="./games.html">Games</a></a>
+				<li><a href="./programs.html">Programs</a></a>
+				<li><a href="./school.html">School</a></a>
+				<li><a href="./other.html">Other</a></a>
+				<li><a href="#" class="fa" id="active">&#xf013</a></a>
+			</ul>
+		</header>
+		<div id="settings_menu">
+			<div id="settings_bar">
+				<h2>Settings</h2>
+				<div id="settings_linebreak"></div>
+				<ul>
+					<h2>Visuals</h2>
+					<li><a onclick="onSettingsMenu('branding');">Branding</a></li>
+					<li><a onclick="onSettingsMenu('colorcorrection');">Color Correction</a></li>
+					<li><a onclick="onSettingsMenu('general');">General</a></li>
+					<li><a onclick="onSettingsMenu('themes');">Themes</a></li>
+					<br>
+					<h2>Other</h2>
+					<li><a onclick="onSettingsMenu('credits');">Credits</a></li>
+					<li><a onclick="onSettingsMenu('references');">References</a></li>
+				</ul>
+				<div id="settings_scrollbg"></div>
+			</div>
+			<div id="settings_main">
+				<h2 id="settings_title">Settings - Home</h2>
+				<div id="settings_linebreak"></div>
+
+					<!-- Home Page -->
+				<div id="settings_home">
+					<h2 id="settings_homeh2" onclick="onSupClick();">Sup.</h2>
+					<p id="settings_homedesc">Click on any tab to change your settings.</p>
+				</div>
+
+					<!-- Branding -->
+				<div id="settings_branding">
+					<a onclick="onSelectBranding('bing');">Bing</a>
+					<a onclick="onSelectBranding('calculator');">Chrome Calculator</a>
+					<a onclick="onSelectBranding('chrome_web_store');">Chrome Web Store</a>
+					<a onclick="onSelectBranding('clever');">Clever</a>
+					<a onclick="onSelectBranding('cursive');">Cursive</a>
+					<a onclick="onSelectBranding('desmos');">Desmos</a>
+					<a onclick="onSelectBranding('google');">Google</a>
+					<a onclick="onSelectBranding('google_classroom');">Google Classroom</a>
+					<a onclick="onSelectBranding('google_docs');">Google Docs</a>
+					<a onclick="onSelectBranding('google_drive');">Google Drive</a>
+					<a onclick="onSelectBranding('google_forms');">Google Forms</a>
+					<a onclick="onSelectBranding('google_sheets');">Google Sheets</a>
+					<a onclick="onSelectBranding('google_sites');">Google Sites</a>
+					<a onclick="onSelectBranding('google_slides');">Google Slides</a>
+					<a onclick="onSelectBranding('ixl');">IXL</a>
+					<a onclick="onSelectBranding('kahoot');">Kahoot!</a>
+					<a onclick="onSelectBranding('kami');">Kami</a>
+					<a onclick="onSelectBranding('progressbook');">ProgressBook</a>
+					<a onclick="onSelectBranding('savvas_easybridge');">Savvas EasyBridge</a>
+					<a onclick="onSelectBranding('savvas_realize');">Savvas Realize</a>
+					<a onclick="onSelectBranding('schoolinks');">SchooLinks</a>
+				</div>
+
+					<!-- Color Correction -->
+				<div id="settings_colorcorrection">
+					<a onclick="onColorBlind('default');">Default</a>
+					<a onclick="onColorBlind('achromatomaly');">Achromatomaly</a>
+					<a onclick="onColorBlind('achromatopsia');">Achromatopsia</a>
+					<a onclick="onColorBlind('deuteranomaly');">Deuteranomaly</a>
+					<a onclick="onColorBlind('deuteranopia');">Deuteranopia</a>
+					<a onclick="onColorBlind('protanomaly');">Protanomaly</a>
+					<a onclick="onColorBlind('protanopia');">Protanopia</a>
+					<a onclick="onColorBlind('tritanomaly');">Tritanomaly</a>
+					<a onclick="onColorBlind('tritanopia');">Tritanopia</a>
+					<img src="https://i.stack.imgur.com/IgSmJ.png">
+				</div>
+
+					<!-- General -->
+				<div id="settings_general">
+					<a id="settings_option" onmouseover="onOptionDesc('Toggles image antialiasing. Disabling may improve performance.');">
+						<input id="checkbox-antialiasing" type="checkbox">
+						<p>Antialiasing</p>
+					</a>
+					<a id="settings_option" onmouseover="onOptionDesc('Enables page card icons. Disabling will improve performance.');">
+						<input id="checkbox-cardicons" type="checkbox">
+						<p>Card Icons</p>
+					</a>
+					<a id="settings_option" onmouseover="onOptionDesc('Enables smooth background scroll. Disabling will improve performance.');">
+						<input id="checkbox-dynamicbackgrounds" type="checkbox">
+						<p>Dynamic Backgrounds</p>
+					</a>
+					<a id="settings_option" onmouseover="onOptionDesc('Enables basic webfonts. May improve performance.');">
+						<input id="checkbox-legiblefont" type="checkbox">
+						<p>Legible Font</p>
+					</a>
+					<a id="settings_option" onmouseover="onOptionDesc('Enables splash text on the index. Disabling will improve performance.');">
+						<input id="checkbox-splashtext" type="checkbox">
+						<p>Splash Text</p>
+					</a>
+					<img src="https://i.stack.imgur.com/IgSmJ.png">
+				</div>
+
+					<!-- Themes -->
+				<div id="settings_themes">
+					<a onclick="onThemeSelect('default');" onmouseover="onOptionDesc('The look you all know. Changes depending on the month.');">Default</a>
+					<a onclick="onThemeSelect('aportrait');" onmouseover="onOptionDesc('A mirror of the world we look into.');">A Portrait</a>
+					<a onclick="onThemeSelect('astraldrifter');" onmouseover="onOptionDesc('Glide among the cosmos and breathe.');">Astral Drifter</a>
+					<a onclick="onThemeSelect('awake');" onmouseover="onOptionDesc('Go start a new game!');">覚ます</a>
+					<a onclick="onThemeSelect('bliss');" onmouseover="onOptionDesc('Looks a bit like bubblegum.');">Bliss</a>
+					<a onclick="onThemeSelect('chatty');" onmouseover="onOptionDesc('If it exists, there\'s probably a theme of it.');">Chatty</a>
+					<a onclick="onThemeSelect('classicdark');" onmouseover="onOptionDesc('Because every new Chromebook gets brighter and brighter.');">Classic Dark</a>
+					<a onclick="onThemeSelect('classiclight');" onmouseover="onOptionDesc('A bright theme for those who want something simple.');">Classic Light</a>
+					<a onclick="onThemeSelect('cleverest');" onmouseover="onOptionDesc('You\'ve seen this palette enough, haven\'t you?');">Cleverest</a>
+					<a onclick="onThemeSelect('crystalis');" onmouseover="onOptionDesc('Something a bit fancier for the gents & gals.');">Crystalis</a>
+					<a onclick="onThemeSelect('daysgoneby');" onmouseover="onOptionDesc('Still the same as it ever was.');">Days Gone By</a>
+					<a onclick="onThemeSelect('downhill');" onmouseover="onOptionDesc('Now we\'re only falling apart.');">Downhill</a>
+					<a onclick="onThemeSelect('easternhusky');" onmouseover="onOptionDesc('A memorial of days long gone.');">Eastern Husky</a>
+					<a onclick="onThemeSelect('frostbitten');" onmouseover="onOptionDesc('The chilly blues of the frostlands.');">Frostbitten</a>
+					<a onclick="onThemeSelect('gardenofegress');" onmouseover="onOptionDesc('Too long overgrown by now.');">Garden of Egress</a>
+					<a onclick="onThemeSelect('goodoletimes');" onmouseover="onOptionDesc('When life was much, much simpler.');">Good Ole Times</a>
+					<a onclick="onThemeSelect('handheld');" onmouseover="onOptionDesc('32 kilobytes of retro goodness.');">Handheld</a>
+					<a onclick="onThemeSelect('handstitched');" onmouseover="onOptionDesc('Made with blood, sweat, but no tears.');">Handstitched</a>
+					<a onclick="onThemeSelect('innerzen');" onmouseover="onOptionDesc('Look withing the confines of oneself.');">Inner Zen</a>
+					<a onclick="onThemeSelect('meloncholy');" onmouseover="onOptionDesc('Yes, this pun sucks. Now you can leave.');">Meloncholy</a>
+					<a onclick="onThemeSelect('monospace');" onmouseover="onOptionDesc('Two sides of the same coin.');">Monospace</a>
+					<a onclick="onThemeSelect('paintbrush');" onmouseover="onOptionDesc('Using the bare essentials.');">Paintbrush</a>
+					<a onclick="onThemeSelect('projectb');" onmouseover="onOptionDesc('we did the funnys and now it over');">Project-B</a>
+					<a onclick="onThemeSelect('redacted');" onmouseover="onOptionDesc('For those who search for hours.');">███████</a>
+					<a onclick="onThemeSelect('rugburn');" onmouseover="onOptionDesc('That\'s gonna leave a mark.');">Rugburn</a>
+					<a onclick="onThemeSelect('rv1');" onmouseover="onOptionDesc('The roots of what we are today, but minified.');">Rv1</a>
+					<a onclick="onThemeSelect('sandland');" onmouseover="onOptionDesc('Who even reads these anyway?');">Sandland</a>
+					<a onclick="onThemeSelect('spinetingler');" onmouseover="onOptionDesc('They\'ll seal your doom tonight!');">Spine-Tingler</a>
+					<a onclick="onThemeSelect('ssmaritime');" onmouseover="onOptionDesc('Down in the deep blue.');">S.S. Maritime</a>
+					<a onclick="onThemeSelect('thevampirequeen');" onmouseover="onOptionDesc('Why does blood taste good?');">The Vampire Queen</a>
+					<a onclick="onThemeSelect('thevirginking');" onmouseover="onOptionDesc('Forgive me for whatever I do.');">The Virgin King</a>
+					<a onclick="onThemeSelect('websurfer');" onmouseover="onOptionDesc('Anything and everything. All of the time.');">Web Surfer</a>
+					<a onclick="onThemeSelect('why');" onmouseover="onOptionDesc('Not spooky, didn\'t jump.');">W.H.Y.</a>
+					<a onclick="onThemeSelect('yearslater');" onmouseover="onOptionDesc('It\'s been a really long time, hasn\'t it?');">Years Later...</a>
+					<a onclick="onThemeSelect('yesterday');" onmouseover="onOptionDesc('Those you know will have come and gone.');">Yesterday</a>
+				</div>
+
+					<!-- Credits -->
+				<div id="settings_credits">
+					<a onclick="onCreditsMember('scadaddle');" onmouseover="onOptionDesc('Owner - Programmer - Artist');">
+						<img src="./../assets/credits/scadaddle.png">
+						<p>Scadaddle</p>
+					</a>
+					<a onclick="onCreditsMember('czar');" onmouseover="onOptionDesc('Site Finder - Additional Support');">
+						<img src="./../assets/credits/czar.png">
+						<p>The Czar Bomba</p>
+					</a>
+					<a onclick="onCreditsMember('pes');" onmouseover="onOptionDesc('Additional Support - Helped with Ideas');">
+						<img src="./../assets/credits/pes.png">
+						<p>Pes</p>
+					</a>
+					<a onclick="onCreditsMember('mrsprings');" onmouseover="onOptionDesc('Helped with Ideas');">
+						<img src="./../assets/credits/mrsprings.png">
+						<p>mr springs</p>
+					</a>
+					<a onclick="onCreditsMember('thecevinator');" onmouseover="onOptionDesc('He was there.');">
+						<img src="./../assets/credits/thecevinator.png">
+						<p>The Cevinator</p>
+					</a>
+					<a onclick="onCreditsMember('jack');" onmouseover='onOptionDesc(`Site Finder - "Straight White Male"`);'>
+						<img src="./../assets/credits/jack.png">
+						<p>Jack</p>
+					</a>
+				</div>
+				<div id="settings_creditsmember">
+					<img id="member-img" src="./../assets/grid.png">
+					<h2 id="member-name">name</h2>
+					<p id="member-desc1">desc1</p>
+					<br>
+					<p id="member-desc2">desc2</p>
+					<ul>
+						<li><a id="member-link1" target="_blank" href="href1">link1</a></a>
+						<li><a id="member-link2" target="_blank" href="href2">link2</a></a>
+						<li><a id="member-link3" target="_blank" href="href3">link3</a></a>
+						<li><a id="member-link4" target="_blank" href="href4">link4</a></a>
+						<li><a id="member-link5" target="_blank" href="href5">link5</a></a>
+					</ul>
+				</div>
+
+					<!-- References -->
+				<div id="settings_references">
+					<div id="settings_optionselect">
+						<ul>
+							<li><a href="https://web.cs.dal.ca/~jamie/CS3172/Materials/examples/XHTML/entities/ASCII.html">ASCII Codes</a></a>
+							<li><a href="https://autoprefixer.github.io/">Autoprefixer CSS online</a></a>
+							<li><a href="https://web.archive.org/web/20081014161121/http://www.colorjack.com/labs/colormatrix/">Color Blindness Simulation Values</a></a>
+							<li><a href="https://fonts.google.com/">Google Fonts</a></a>
+							<li><a href="https://www.youtube.com/watch?v=1wfeqDyMUx4">Parallax Scrolling Background</a></a>
+							<li><a href="https://stackoverflow.com/">Stack Overflow</a></a>
+						</ul>
+					</div>
+				</div>
+
+				<p id="settings_optiondesc"></p>
+			</div>
+		</div>
+		<footer></footer>
+		<noscript>
+			<iframe src="./../assets/htmls/noscript.html"></iframe>
+		</noscript>
+	</body>
+</html>

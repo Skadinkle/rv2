@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Stick+No+Bills");
+@import url("https://fonts.googleapis.com/css?family=Tilt+Neon");
+
+:root { /* Palette */
+	--s-sky-upper: #9c9c7b;
+	--s-sky-lower: #f9ffba;
+	--s-text-light: #ffffc8;
+	--s-text-emphasis: #d3dca8;
+	--s-text-emphasis-border: #4b7a5f;
+	--s-text-dim: #Cce6a7;
+	--s-body-main: #085956;
+	--s-card-main: #2e7e6e;
+	--s-card-hover: #408a6a;
+	--s-card-shadow: #00484d75;
+	--s-card-shadow-hover: #00484d80;
+}
+
+* {
+	font-family: "Stick No Bills", sans-serif;
+	font-weight: 100;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(50vh, var(--s-sky-lower)), color-stop(100vh, var(--s-sky-upper)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh, var(--s-sky-upper) 100vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh, var(--s-sky-upper) 100vh);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Tilt Neon";
+}
+section img#sky {
+	-webkit-filter: sepia(50%) hue-rotate(90deg) saturate(2);
+	filter: sepia(50%) hue-rotate(90deg) saturate(2);
+	mix-blend-mode: multiply;
+}
+section img#ground {
+	-webkit-filter: sepia(50%) hue-rotate(45deg) grayscale(50%);
+	filter: sepia(50%) hue-rotate(45deg) grayscale(50%);
+}
+#page-options img {
+	-webkit-filter: grayscale();
+	filter: grayscale();
+}
+footer {
+	width: 520px;
+}

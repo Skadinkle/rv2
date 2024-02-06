@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Playpen+Sans");
+
+:root { /* Palette */
+	--s-sky-upper: #ffcc74;
+	--s-sky-lower: #ffe7c8;
+	--s-text-light: #efefef;
+	--s-text-emphasis: #ffcc74;
+	--s-text-emphasis-border: #d88c45;
+	--s-text-dim: #d9d9d9;
+	--s-body-main: #d03425;
+	--s-card-main: #ef5f3c;
+	--s-card-hover: #f57d3e;
+	--s-card-shadow: #8d121275;
+	--s-card-shadow-hover: #8d121280;
+}
+
+* {
+	font-family: "Playpen Sans", sans-serif;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(75vh, var(--s-sky-upper)), color-stop(100vh, var(--s-sky-lower)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Permanent Marker";
+	font-weight: 100;
+}
+section img#sky {
+	-webkit-filter: sepia() hue-rotate(-30deg) contrast(500%);
+	filter: sepia() hue-rotate(-30deg) contrast(500%);
+	mix-blend-mode: multiply;
+}
+section img#ground {
+	-webkit-filter: sepia() hue-rotate(-37.5deg) saturate(400%);
+	filter: sepia() hue-rotate(-37.5deg) saturate(400%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#page-options img {
+	-webkit-filter: sepia() hue-rotate(-30deg) saturate(200%);
+	filter: sepia() hue-rotate(-30deg) saturate(200%);
+}
+footer {
+	width: 600px;
+}

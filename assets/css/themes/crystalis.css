@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Asul");
+@import url("https://fonts.googleapis.com/css?family=Atma");
+
+:root { /* Palette */
+	--s-sky-upper: #ff8db7;
+	--s-sky-lower: #ffdfe7;
+	--s-text-light: #ffc1d8;
+	--s-text-emphasis: #ff4b8d;
+	--s-text-emphasis-border: #77124d;
+	--s-text-dim: #be4772;
+	--s-body-main: #28182c;
+	--s-card-main: #462246;
+	--s-card-hover: #5f2456;
+	--s-card-shadow: #0a060b75;
+	--s-card-shadow-hover: #0a060b80;
+}
+
+* {
+	font-family: "Asul", sans-serif;
+}
+body {
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Atma";
+	font-weight: bolder;
+}
+section img#ground {
+	filter: saturate(200%) sepia() hue-rotate(-45deg) grayscale(50%);
+	mix-blend-mode: difference;
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#page-options img {
+	filter: sepia() hue-rotate(-90deg) saturate(150%);
+}
+footer {
+	width: 450px;
+}

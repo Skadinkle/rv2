@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script");
+
+:root { /* Palette */
+	--s-sky-upper: #eb6868;
+	--s-sky-lower: #f8f3be;
+	--s-text-light: #f8f3be;
+	--s-text-emphasis: #fcdd95;
+	--s-text-emphasis-border: #a7473b;
+	--s-text-dim: #ffd19d;
+	--s-body-main: #592e45;
+	--s-card-main: #803333;
+	--s-card-hover: #a7473b;
+	--s-card-shadow: #3f243175;
+	--s-card-shadow-hover: #3f243180;
+}
+
+* {
+	font-family: "Fira Sans", sans-serif;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(75vh, var(--s-sky-lower)), color-stop(100vh, var(--s-sky-upper)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Nanum Pen Script";
+	font-weight: 900;
+}
+section img#sky {
+	-webkit-filter: sepia(50%) hue-rotate(-60deg) saturate(2) contrast(125%);
+	filter: sepia(50%) hue-rotate(-60deg) saturate(2) contrast(125%);
+	mix-blend-mode: multiply;
+}
+section img#ground {
+	-webkit-filter: sepia(50%) hue-rotate(-60deg) saturate(0.8);
+	filter: sepia(50%) hue-rotate(-60deg) saturate(0.8);
+}
+section img#overlay {
+	-webkit-filter: saturate(200%);
+	filter: saturate(200%);
+	mix-blend-mode: color-burn;
+}
+#page-options img {
+	-webkit-filter: sepia() hue-rotate(-45deg) saturate(150%);
+	filter: sepia() hue-rotate(-45deg) saturate(150%);
+}
+footer {
+	width: 430px;
+}

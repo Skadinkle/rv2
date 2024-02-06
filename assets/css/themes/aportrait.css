@@ -1,0 +1,57 @@
+:root { /* Palette */
+	--s-sky-upper: #9db4f5;
+	--s-sky-lower: #754bca;
+	--s-text-light: #eaf2e5;
+	--s-text-emphasis: #beed9e;
+	--s-text-emphasis-border: #96c44e;
+	--s-text-dim: #b9b5b7;
+	--s-body-main: #222123;
+	--s-card-main: #343035;
+	--s-card-hover: #422b3e;
+	--s-card-shadow: #13121475;
+	--s-card-shadow-hover: #13121480;
+}
+
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(150vh, var(--s-sky-lower)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 150vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 150vh);
+}
+header #funky-site-logo, #funky-title-large {
+	scale: -1;
+}
+section img#ground, section img#sky {
+	-webkit-filter: blur(0.25px) sepia(50%) grayscale(50%) hue-rotate(45deg);
+	filter: blur(0.25px) sepia(50%) grayscale(50%) hue-rotate(45deg);
+}
+img {
+	rotate: 180deg;
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+#main-body {
+	-webkit-filter: hue-rotate(45deg);
+	filter: hue-rotate(45deg);
+}
+#page-options img {
+	-webkit-filter: invert() grayscale();
+	filter: invert() grayscale();
+}
+img.squish:hover {
+	rotate: 182deg;
+	-webkit-transform: scale(-1.05, 0.95);
+	-ms-transform: scale(-1.05, 0.95);
+	transform: scale(-1.05, 0.95);
+}
+img.squish:active {
+	rotate: 183deg;
+	-webkit-transform: scale(-1.1, 0.9);
+	-ms-transform: scale(-1.1, 0.9);
+	transform: scale(-1.1, 0.9);
+}
+footer {
+	-webkit-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	transform: scale(1, -1);
+}

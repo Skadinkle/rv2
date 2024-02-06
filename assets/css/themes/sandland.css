@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Itim");
+@import url("https://fonts.googleapis.com/css?family=Neucha");
+
+:root { /* Palette */
+	--s-sky-upper: #c39854;
+	--s-sky-lower: #ffffad;
+	--s-text-light: #ffffba;
+	--s-text-emphasis: #ffff8d;
+	--s-text-emphasis-border: #ffc038;
+	--s-text-dim: #ffe078;
+	--s-body-main: #6a2c00;
+	--s-card-main: #7c4000;
+	--s-card-hover: #964800;
+	--s-card-shadow: #55170075;
+	--s-card-shadow-hover: #55170080;
+
+	--s-sandland-cardtrans: rgba(124, 64, 0, 0.8);
+	--s-sandland-cardhovertrans: rgba(150, 72, 0, 0.8);
+	--s-sandland-stone: url("https://cdn.architextures.org/textures/20/07/sandstone-masonry-5efe5a0d8f789-1250.jpg");
+}
+
+* {
+	font-family: "Itim", sans-serif;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(50vh, var(--s-sky-lower)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 50vh);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Neucha";
+	font-weight: bolder;
+}
+section img#ground {
+	-webkit-filter: saturate(150%) sepia();
+	filter: saturate(150%) sepia();
+}
+#page-options a#item, #info-box {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sandland-cardtrans)), to(var(--s-sandland-cardtrans))), var(--s-sandland-stone);
+	background: -o-linear-gradient(var(--s-sandland-cardtrans), var(--s-sandland-cardtrans)), var(--s-sandland-stone);
+	background: linear-gradient(var(--s-sandland-cardtrans), var(--s-sandland-cardtrans)), var(--s-sandland-stone);
+}
+#page-options img {
+	-webkit-filter: sepia() saturate(150%);
+	filter: sepia() saturate(150%);
+}
+#page-options a#item:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sandland-cardhovertrans)), to(var(--s-sandland-cardhovertrans))), var(--s-sandland-stone);
+	background: -o-linear-gradient(var(--s-sandland-cardhovertrans), var(--s-sandland-cardhovertrans)), var(--s-sandland-stone);
+	background: linear-gradient(var(--s-sandland-cardhovertrans), var(--s-sandland-cardhovertrans)), var(--s-sandland-stone);
+}
+footer {
+	width: 430px;
+}

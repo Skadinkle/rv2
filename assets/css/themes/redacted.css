@@ -1,0 +1,51 @@
+:root { /* Palette */
+	--s-sky-upper: #ff9000;
+	--s-sky-lower: #0e0e0e;
+	--s-text-light: #ffffff;
+	--s-text-emphasis: #ff9000;
+	--s-text-emphasis-border: #573100;
+	--s-text-dim: #ffffff;
+	--s-body-main: #0e0e0e;
+	--s-card-main: #131313;
+	--s-card-hover: #151515;
+	--s-card-shadow: #00000075;
+	--s-card-shadow-hover: #00000080;
+}
+
+* {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+	background: var(--s-sky-lower);
+}
+header {
+	background: var(--s-sky-upper);
+}
+header ul li a, header ul li a.fa, header ul li a.fa:hover, header ul li a.fa#active {
+	color: var(--s-body-main);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bolder;
+}
+section img#sky {
+	-webkit-filter: sepia() hue-rotate(-30deg) saturate(200%);
+	filter: sepia() hue-rotate(-30deg) saturate(200%);
+	mix-blend-mode: multiply;
+}
+section img#ground {
+	-webkit-filter: sepia() hue-rotate(-15deg) saturate(500%);
+	filter: sepia() hue-rotate(-15deg) saturate(500%);
+}
+#page-options a#item, .credits-options a#item {
+	border-color: var(--s-text-emphasis);
+	border-style: solid;
+	border-width: 1px;
+}
+#page-options img {
+	-webkit-filter: sepia() hue-rotate(-30deg) saturate(500%);
+	filter: sepia() hue-rotate(-30deg) saturate(500%);
+}
+footer {
+	width: 540px;
+}

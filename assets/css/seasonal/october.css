@@ -1,0 +1,18 @@
+:root { /* Palette */
+	--s-sky-lower: #482d6f;
+	--s-sky-upper: #fec8ff;
+	--s-text-light: #f2f0e5;
+	--s-text-emphasis: #ede19e;
+	--s-text-emphasis-border: #c4994e;
+	--s-text-dim: #b8b5b9;
+	--s-body-main: #212123;
+	--s-card-main: #303035;
+	--s-card-hover: #352b42;
+	--s-card-shadow: #12121475;
+	--s-card-shadow-hover: #12121480;
+}
+
+section img#ground {
+	-webkit-filter: saturate(0.8) hue-rotate(-60deg);
+	filter: saturate(0.8) hue-rotate(-60deg);
+}

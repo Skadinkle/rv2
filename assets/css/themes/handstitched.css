@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=DynaPuff");
+@import url("https://fonts.googleapis.com/css?family=Shantell+Sans");
+
+:root { /* Palette */
+	--s-sky-upper: #c9eaff;
+	--s-sky-lower: #fff7c0;
+	--s-text-light: #ffffff;
+	--s-text-emphasis: #ffc767;
+	--s-text-emphasis-border: #b96f1f;
+	--s-text-dim: #f3e1c3;
+	--s-body-main: #773d24;
+	--s-card-main: #ae3528;
+	--s-card-hover: #ce4747;
+	--s-card-shadow: #41260f75;
+	--s-card-shadow-hover: #41260f80;
+}
+
+* {
+	font-family: "DynaPuff", sans-serif;
+}
+body {
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--s-sky-upper)), color-stop(75vh, var(--s-sky-lower)), color-stop(100vh, var(--s-sky-upper)));
+	background: -o-linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 75vh, var(--s-sky-upper) 100vh);
+}
+header #funky-site-logo, header ul li a, #funky-title, #funky-title-small, #funky-title-large, #funky-title-splash, #funky-title-splash a, #main-body h2, h2#video-player, #video-menu h2, #settings_title, #settings_bar h2, footer a {
+	font-family: "Shantell Sans";
+}
+section img#sky {
+	-webkit-filter: sepia(50%) hue-rotate(45deg) saturate(2) blur(0.25px);
+	filter: sepia(50%) hue-rotate(45deg) saturate(2) blur(0.25px);
+	mix-blend-mode: multiply;
+}
+section img#ground {
+	-webkit-filter: saturate(125%) opacity(90%);
+	filter: saturate(125%) opacity(90%);
+}
+section img#overlay {
+	mix-blend-mode: color-burn;
+}
+#page-options a#item {
+	border-color: var(--s-text-light);
+	border-style: dashed;
+	border-width: 2px;
+}
+#page-options img {
+	-webkit-filter: sepia(90%) saturate(200%);
+	filter: sepia(90%) saturate(200%);
+}
+#settings_branding a:hover, #settings_colorcorrection a:hover, #settings_themes a:hover, #settings_additional a:hover {
+	border-style: dashed;
+}
+footer {
+	width: 590px;
+}

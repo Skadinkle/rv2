@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+iframe {
+	border: none;
+	height: 100vh;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100vw;
+}

@@ -1,0 +1,31 @@
+:root { /* Palette */
+	--s-sky-upper: #4b80ca;
+	--s-sky-lower: #9df5f4;
+	--s-text-light: #f2f0e5;
+	--s-text-emphasis: #ede19e;
+	--s-text-emphasis-border: #c4994e;
+	--s-text-dim: #b8b5b9;
+	--s-body-main: #212123;
+	--s-card-main: #303035;
+	--s-card-hover: #352b42;
+	--s-card-shadow: #12121475;
+	--s-card-shadow-hover: #12121480;
+}
+
+body {
+	background: linear-gradient(var(--s-sky-upper) 0%, var(--s-sky-lower) 100vh);
+}
+section img#sky {
+	filter: saturate(2);
+	mix-blend-mode: luminosity;
+	opacity: 25%;
+}
+section img#ground {
+	filter: saturate(0.8);
+}
+#page-options img {
+	filter: grayscale();
+}
+footer {
+	width: 420px;
+}
