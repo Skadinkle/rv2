@@ -20,18 +20,37 @@ body {
 }
 section img#sky {
 	content: var(--s-why-goop);
-	filter: sepia() hue-rotate(-45deg) brightness(50%) contrast(5000%);
+	filter: sepia() hue-rotate(-30deg) contrast(10000%) opacity(25%) blur(5px) brightness(500%);
 	mix-blend-mode: normal;
-	opacity: 1;
+	opacity: 100%;
+}
+section img#hills {
+	background-image: var(--s-why-goop);
+	-webkit-filter: sepia() brightness(50%) contrast(5000%) opacity(40%);
+	filter: sepia() brightness(50%) contrast(5000%) opacity(40%);
+	mix-blend-mode: screen;
+	-webkit-transform: scaleX(-100%);
+	-ms-transform: scaleX(-100%);
+	transform: scaleX(-100%);
 }
 section img#ground {
 	background-image: var(--s-why-vein);
-	filter: sepia() contrast(5000%) opacity(50%);
+	-webkit-filter: sepia() contrast(5000%) opacity(90%);
+	filter: sepia() contrast(5000%) opacity(90%);
 	mix-blend-mode: screen;
-	transform: scaleX(-1);
+	-webkit-transform: scaleX(-100%);
+	-ms-transform: scaleX(-100%);
+	transform: scaleX(-100%);
 }
-#funky-title, #funky-title-small, #funky-title-large, #funky-title-splash {
+section img#overlay {
+	visibility: hidden;
+}
+#funky-title-small, #funky-title-large, #funky-title-splash {
+	-webkit-filter: sepia() brightness(75%) contrast(5000%);
 	filter: sepia() brightness(75%) contrast(5000%);
+}
+#funky-title-splash {
+	filter: none;
 }
 #page-options a#item {
 	border-color: var(--s-text-emphasis);
@@ -39,6 +58,7 @@ section img#ground {
 	border-width: 1px;
 }
 #page-options img {
+	-webkit-filter: sepia() contrast(5000%);
 	filter: sepia() contrast(5000%);
 }
 footer {
